@@ -5,6 +5,7 @@ build:
   tools:
     python: "3.10"
   commands:
+    - pip install sphinx
     - pip install . --use-pep517
     - python -m sphinx -T -b html docs/ $READTHEDOCS_OUTPUT/html
 
